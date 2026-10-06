@@ -1,6 +1,6 @@
 <?php
 
-$today     = new DateTime();
+$today     = new DateTimeImmutable('now', new DateTimeZone('Europe/Kyiv'));
 $month     = (int)$today->format('n');   // 1–12
 $day       = (int)$today->format('j');   // 1–31
 
